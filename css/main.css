@@ -45,16 +45,17 @@ a.nav-link:hover {
 
 /* Content body */
 .content-container {
-    transform: translateY(-40%);
+    transform: translateY(-20%);
     background: white;
     border-radius: 5px;
 }
 
 /* Into v-card */
 div.intro-v-card {
-    padding: 40px 0 20px;
+    padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 1px solid #E7E7E7;
 }
 
 .auth-img-container {
@@ -124,6 +125,53 @@ div.intro-v-card {
     color: #55ACEE;
 }
 
+/* Email */
+.email-line {
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.email-char {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/* Projects */
+.projects-row {
+    padding: 30px 0;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+p.projects-subtitle {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
+
+.projects-carousel {
+    background-image: linear-gradient(to right, #56CCF2 30%, #2F80ED 100%);
+    margin-top: 30px;
+}
+
+.project-item {
+    padding: 25px 25px 50px;
+}
+
+.project-card {
+    background-color: white;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 600px) {
     /* Navbar */
     .nav-sep {
@@ -140,5 +188,10 @@ div.intro-v-card {
     .banner-img {
         height: 100%;
         width: auto;
+    }
+
+    /* Intro v-card */
+    .auth-img-container {
+        border-right: none;
     }
 }
