@@ -25,41 +25,67 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/8fe99fb775.js"></script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content-row row">
-        <!-- Header/Sidebar -->
-        <div class="sidebar col s12 m3 green lighten-5 z-depth-3">
-            <h3 class="side-title">Welcome to Salil's blog</h3>
-            <ul class="side-menu">
-                <li><a href="#" class="side-link">Technology</a></li>
-                <li><a href="#" class="side-link">Travel</a></li>
-                <li><a href="#" class="side-link">Resume</a></li>
-                <li><a href="#" class="side-link">Contact Me</a></li>
-            </ul>
-        </div>
-        <!-- Header/Sidebar end -->
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="transparent z-depth-0">
+            <div class="nav-wrapper custom-nav-wrapper black-text">
+                <ul>
+                    <li><a href="#" class="nav-link">About</a></li><li class="nav-sep">/</li>
+                    <li><a href="#" class="nav-link">Blog</a></li><li class="nav-sep">/</li>
+                    <li><a href="#" class="nav-link">Resume</a></li><li class="nav-sep">/</li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar end -->
 
-        <!-- Content -->
-        <div class="col s12 m9" style="height: 100%">
-            <div class="temp-holder">
-                <div class="card-panel" style="margin: auto 10vw;">
-                    <img class="responsive-img" src="/img/coffee-pot.png" style="max-width: 128px; height: auto;" />
-                    <h5>Please wait!</h5>
-                    <h5>Something good is brewing here, should be done soon!</h5>
-                </div>
+    <!-- Banner image -->
+    <div class="banner-container">
+        <img class="banner-img" src="/img/pittsburgh-skyline.jpg" />
+    </div>
+    <!-- Banner image end -->
+
+    <!-- Content -->
+    <div class="content-container container z-depth-3">
+
+        <!-- Into v-card -->
+        <div class="row intro-v-card">
+            <div class="col s12 m4 auth-img-container">
+                <img src="./img/salil-formal.jpg" class="auth-img" />
             </div>
 
-            <!-- Footer -->
-            <footer>
-            </footer>
-            <!-- Footer end -->
+            <div class="col s12 m8 auth-info-col">
+                <div class="auth-info-row">
+                    <span class="auth-greet">Hello, I'm Salil Deshpande!</span>
+                    <span class="auth-greet-sub">
+                        I am studying <b>Master of Information Systems Management</b> at <b><u>Carnegie Mellon
+                        University</u></b>. Scroll on to know more about me, my work and my experiences.
+                    </span>
+                </div>
+
+                <div class="auth-contact-row">
+                    <span class="auth-contact-greet">You can connect with me here:</span>
+                    <div>
+                        <a href="https://www.linkedin.com/in/salil-deshpande-1011/" class="fab fa-linkedin" style="padding-left: 0px;"></a>
+                        <a href="https://github.com/salild1011" class="fab fa-github-square"></a>
+                        <a href="https://www.facebook.com/salil.deshpande.779" class="fab fa-facebook-square"></a>
+                        <a href="https://twitter.com/salild1011" class="fab fa-twitter-square"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Content end -->
+        <!-- Into v-card end -->
     </div>
+    <!-- Content end -->
 
     <!-- Custom JS -->
     <script src="/js/main.js"></script>
