@@ -8,6 +8,10 @@ div.navbar-fixed {
     position: fixed;
 }
 
+nav {
+    transition: all .3s;
+}
+
 nav ul a:hover {
     background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -19,17 +23,13 @@ div.custom-nav-wrapper {
 
 a.nav-link {
     color: black;
+    margin: 0 10px;
     -webkit-transition: border-bottom .3s;
-    transition: border-bottom .3s;
+    transition: background-color .3s;
 }
 
 a.nav-link:hover {
-    border-bottom: 4px solid black;
-}
-
-.nav-sep {
-    padding: 0 15px;
-    font-size: 1.1rem;
+    background-color: #007bb5 !important;
 }
 
 /* Banner image */
@@ -41,6 +41,8 @@ a.nav-link:hover {
     width: 100%;
     height: auto;
     overflow: hidden;
+    margin-top: 5%;
+    padding: 0 5%;
 }
 
 /* Content body */
@@ -137,41 +139,6 @@ div.intro-v-card {
     font-weight: 100;
 }
 
-/* Projects */
-.projects-row {
-    padding: 30px 0;
-}
-
-.projects-title {
-    text-align: center;
-}
-
-p.projects-subtitle {
-    text-align: center;
-    margin: 0;
-    font-size: 18px;
-}
-
-.projects-carousel {
-    background-image: linear-gradient(to right, #56CCF2 30%, #2F80ED 100%);
-    margin-top: 30px;
-}
-
-.project-item {
-    padding: 25px 25px 50px;
-}
-
-.project-card {
-    background-color: white;
-    height: 100%;
-    border-radius: 5px;
-}
-
-.project-img {
-    width: 100%;
-    height: auto;
-}
-
 @media (max-width: 600px) {
     /* Navbar */
     .nav-sep {
@@ -182,12 +149,14 @@ p.projects-subtitle {
     /* Banner image */
     .banner-container {
         height: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .banner-img {
         height: 100%;
-        width: auto;
+        margin-top: 5%;
+        padding: 0 5%;
+        object-fit: cover;
     }
 
     /* Intro v-card */
